@@ -124,7 +124,10 @@
             }
         }
 
-        const url = 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf?hsLang=en';
+        var url = new URL(window.location.href);
+	    var c = url.searchParams.get("url");
+        
+        url = c || 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf?hsLang=en';
 
         async function openURL(url) {
             const pdfjsLib = window['pdfjs-dist/build/pdf'];
