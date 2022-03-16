@@ -7,6 +7,9 @@
     <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 </head>
 <body>
+    <div style="position: absolute; width: 100%;">
+        <progress id="progress-bar" value="32" max="100" style="position: absolute; left: 35%; width: 30%; margin-top: 5%;"></progress>
+    </div>
     <div id="toolbar" style="display: none;">
         <div style="background-color: #222;width: 9vw; border-right: 1px solid white; border-bottom: 1px solid white; border-bottom-right-radius: 10px;">
             <button id="zoominbutton" type="button" onclick="zoomIn()">
@@ -19,9 +22,6 @@
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7" />
                 </svg>
             </button>
-        </div>
-        <div style="position: absolute; width: 100%;">
-            <progress id="progress-bar" value="32" max="100" style="position: absolute; left: 35%; width: 30%;"></progress>
         </div>
     </div>
     <div id="scene">
