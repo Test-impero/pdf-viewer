@@ -894,7 +894,7 @@ along with ViewerJS.  If not, see <http://www.gnu.org/licenses/>.
           ];
         window.onload = function () {
             // let url = new URL(document.location.href);
-	        let fileUrl = getParameterByName('url');
+	        let fileUrl = decodeURIComponent(getParameterByName('url'));
             fileUrl = fileUrl || 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf?hsLang=en';
             var e = s(document.location),c;
 
